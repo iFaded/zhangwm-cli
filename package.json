@@ -1,0 +1,31 @@
+{
+  "name": "zhangwm-cli",
+  "version": "1.0.0",
+  "description": "这是一个发布npm的demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "zhangwm",
+      "zhangwm.js",
+      "zhangwm-app",
+      "zhangwm-cli"
+    ],
+  "bin": {
+    "strview-cli": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iFaded/zhangwm-cli.git"
+  },
+  "author": {
+    "name": "zhangwemCoding",
+    "email": "lemonade.ming@gmail.com"
+  },
+  "license": "ISC", 
+  "bugs": {
+    "url": "https://github.com/iFaded/zhangwm-cli/issues"
+  },
+  "homepage": "https://github.com/iFaded/zhangwm-cli#readme"
+}
