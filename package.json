@@ -4,9 +4,7 @@
   "description": "这是一个发布npm的demo",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev webpack serve --mode development",
-    "test": "cross-env NODE_ENV=test webpack --mode production",
-    "build": "cross-env NODE_ENV=prod webpack --mode production"
+    "build": "webpack"
   },
   "keywords": [
     "zhangwm",
