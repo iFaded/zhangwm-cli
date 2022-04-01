@@ -4,14 +4,16 @@
   "description": "这是一个发布npm的demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=dev webpack serve --mode development",
+    "test": "cross-env NODE_ENV=test webpack --mode production",
+    "build": "cross-env NODE_ENV=prod webpack --mode production"
   },
   "keywords": [
     "zhangwm",
-      "zhangwm.js",
-      "zhangwm-app",
-      "zhangwm-cli"
-    ],
+    "zhangwm.js",
+    "zhangwm-app",
+    "zhangwm-cli"
+  ],
   "bin": {
     "strview-cli": "./bin/index.js"
   },
@@ -23,9 +25,26 @@
     "name": "zhangwemCoding",
     "email": "lemonade.ming@gmail.com"
   },
-  "license": "ISC", 
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/iFaded/zhangwm-cli/issues"
   },
-  "homepage": "https://github.com/iFaded/zhangwm-cli#readme"
+  "homepage": "https://github.com/iFaded/zhangwm-cli#readme",
+  "devDependencies": {
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.12",
+    "postcss-loader": "^6.2.1"
+  }
 }
